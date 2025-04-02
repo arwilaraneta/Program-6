@@ -1,0 +1,19 @@
+Algorithm:
+
+1. Start
+2. Input a positive number (num).
+3. Initialize sum = 0.
+4. Compute the sum of digits:
+     •Set temp = num.
+     •Repeat while temp > 0:
+       -Extract the last digit using temp % 10.
+       -Add it to sum.
+       -Remove the last digit using temp / 10.
+5. Display the sum of digits.
+6. Check divisibility:
+     •Set divisor = 2.
+     •Repeat while divisor ≤ 9:
+       -If num % divisor == 0, print that num is divisible by divisor.
+       -Else, print that num is not divisible by divisor.
+       -Increment divisor by 1.
+7. End
