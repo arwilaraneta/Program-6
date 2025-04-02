@@ -1,0 +1,32 @@
+#include <iostream> 
+using namespace std;
+
+int main() { 
+  int num, sum = 0, temp;
+
+// Input number
+  cout << "Enter a positive number: ";
+  cin >> num;
+
+// Compute sum of digits
+  temp = num;
+  do {
+    sum += temp % 10;
+    temp /= 10;
+  } while (temp > 0);
+
+cout << "\nThe sum of the digits is: " << sum << "\n\n";
+
+// Check divisibility
+  int divisor = 2;
+  do {
+    if (num % divisor == 0)
+        cout << num << " is divisible by " << divisor << "\n";
+    else
+        cout << num << " is not divisible by " << divisor << "\n";
+    divisor++;
+  } while (divisor <= 9);
+
+return 0;
+}
+
